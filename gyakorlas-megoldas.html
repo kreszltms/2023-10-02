@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyakorlas</title>
+    <link rel="stylesheet" href="./gyakorlas-megoldas.css" />
+    <style>
+      .internal {
+        width: 200px;
+        height: 150px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Portfólió
+Az oldal tetejétől lefelé haladva
+Egy kép magadról: mindegy hogyan helyezed el, 200px széles, a szegély legyen 2px vastagságú, csíkozott és szürke.
+Alatta számozott lista (tetszőleges jelöléssel, vastag betűstílussal) Legjobb képességeim: 10-es számtól és legalább 3db.
+Ez alatt számozatlan lista (tetszőleges jelöléssel, dőlt betűtípussal): Miben kéne fejlődjek?: legalább 3db.
+Itt csinálj egy elválasztó vonalat, ami a képernyő 70%-át tölti ki, teszőleges színű (lehetőleg hexa kódban) és balra zárt, majd két sortörést egymás után.
+
+Ezek alatt hozz létre 2 <div>-et, ezek lesznek a gyűjtők. Körülöttük legyen a szegély 2px vastagságú, pontozott, fekete.
+Az első gyűjtőbe írd be 2-es címsorral 'A kedvenc filmjeim', legyen kék színű a szöveg és középre zárt.
+Itt bekezdésbe írj két kedvenc filmet, amelyek legyenek aláhúzva.
+A második gyűjtőbe írd be szintén 2-es címsorral 'Ahova el szeretnék jutni' szöveget, azonos formázással, mint az előzőt.
+Ezen belül szintén hozz létre egy bekezdést amibe írj 3 várost ahova eljutnál életed során.
+Nem szép, de működik és nekünk most ez számít. -->
+    <section>
+      <h2>Portfólió</h2>
+      <div class="portfolio-personal">
+        <img
+          class="portfolio-image"
+          src="https://picsum.photos/200"
+          alt="Kep magamrol"
+        />
+        <ol start="10" class="portfolio-abilities">
+          <span>Legjobb képességeim</span>
+          <li>Képesség 1</li>
+          <li>Képesség 2</li>
+          <li>Képesség 3</li>
+        </ol>
+        <ul type="circle" class="portfolio-improvement">
+          <span>Miben kéne fejlődjek:</span>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Programozás</li>
+        </ul>
+      </div>
+
+      <hr class="horizontal-line" />
+      <br /><br />
+    </section>
+    <section>
+      <div>
+        <h2 class="heading-blue-center">A kedvenc filmjeim</h2>
+        <u>
+          <p>Film 1</p>
+          <p>Film 2</p>
+        </u>
+        <div>
+          <h2 class="heading-blue-center">Uticéljaim:</h2>
+          <p>Roma</p>
+          <p>Paris</p>
+          <p>New York</p>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+    <section>
+      <div class="container-1">
+        <ul>
+          <li>Alma</li>
+          <li>Körte</li>
+          <li>Banán</li>
+        </ul>
+        <br />
+        <img src="https://picsum.photos/200" alt="kep" />
+      </div>
+      <div class="container-2" style="position: absolute" id="unique-box"></div>
+    </section>
+    <br /><br />
+    <section>
+      <h2>Div tulajdonságai:</h2>
+      <ul>
+        <li>Block szintű elem, tehát</li>
+        <ul>
+          <li>Felveszi a szülő elem teljes szélességét</li>
+          <li>Új sorban kezdődik</li>
+          <li>Szemantikai jeelntése nincs, tekinthető gyűtő elemnek</li>
+        </ul>
+      </ul>
+      <p class="external">Ez a tartalom külső stíluslappal van formázva</p>
+      <p class="internal">Ez a tartalom belső stíluslappal van formázva</p>
+    </section>
+  </body>
+</html>

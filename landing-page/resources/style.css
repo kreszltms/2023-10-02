@@ -1,0 +1,208 @@
+/**********************
+        DEFAULT
+***********************/
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
+
+}
+
+/**********************
+         HEADER
+***********************/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('./road.jpg');
+    /* 100vh = 100 viewheight, az elérhető képernyő teljes magassága */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin-top: 0px;
+}
+
+.main-nav li {
+    margin-right: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.main-nav li a {
+    color: #fff;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    padding: 7px 0;
+    transition: 0.25s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e23;
+    transition: 0.25s;
+}
+
+/**********************
+        HERO-BOX
+***********************/
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 260%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 15px 30px;
+    border-radius: 200px;
+    transition: 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    /* 
+    BAL OLDALI GOMB, ALAPBOL SARGAN (#e67e23) KITOLTVE, SARGA BORDER ES FEHER SZOVEGGEL
+    */
+    color: #fff;
+    background-color: #e67e23;
+    border: 1px solid #e67e23;
+    margin-right: 15px;
+}
+
+.btn-empty:link,
+.btn-empty:visited {
+    /* 
+    JOBB OLDALI GOMB, ALAPBOL NINCS KITOLTVE, SARGA SZEGELLYEL ES SZOVEGGEL
+    */
+    color: #e67e23;
+    border: 1px solid #e67e23;
+}
+
+.btn:hover,
+.btn:active {
+    /* 
+    MINDKET GOMB, HATTERSZIN ES SZEGELY SZIN #fa7d19 
+    */
+    background-color: #fa7d19;
+    border: 1px solid #fa7d19;
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+    /* 
+    JOBB OLDALI GOMB,FEHER SZOVEG
+    */
+    color: #fff;
+}
+
+/********************************
+   RESPONSIBILITY - media query
+*********************************/
+
+@media screen and (max-width: 685px) {
+    .hero-text-box {
+        font-size: 70%;
+    }
+
+    .main-nav {
+        font-size: 70%;
+    }
+}
+
+/********************************
+             ABOUT
+*********************************/
+#about{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("https: //as1.ftcdn.net/v2/jpg/05/68/59/60/1000_F_568596020_8SEgHD8MSWdMSCsC4KhhXjn8gNSnKgyg.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-box{
+    display: flex;
+align-items: center;
+    margin: 20px auto;
+    max-width: 768px;
+
+}
+.about-box img{
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.about-box p{
+    color: #fff;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 300;
+    padding-top: 30px;
+}
+
+h2::after {
+    content: ' ';
+    display: block;
+    background-color: rgb(230, 126, 35);
+    width: 130px;
+    height: 2px;
+    margin: 20px auto 0px;
+}
+
+.choose{
+        text-align: center;
+            color: black;
+            text-transform: uppercase;
+            margin: 0;
+            font-weight: 300;
+            padding-top: 30px;
+}
+
+.features-welcome{
+    text-align: center;
+}
+
+.feature-box{
+    padding: 0 30px;
+}
+.feature-box span{
+    color: #e67e23;
+    
+}
+.bottom-text{
+    margin: 15px;
+}
